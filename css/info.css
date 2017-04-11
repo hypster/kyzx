@@ -1,0 +1,47 @@
+.info-page {
+  font-size: 13px;
+}
+.info-page .main-content {
+  display: block;
+  width: 876px;
+  margin: 0 auto;
+}
+.info-page .row {
+  display: flex;
+}
+.info-page .row table {
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid #edf1f7;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.info-page .row table:last-child {
+  margin-right: 0;
+}
+.info-page .row table caption {
+  height: 27px;
+  line-height: 27px;
+  color: #fff;
+  text-align: left;
+  background-color: #5cadff;
+  padding-left: 14px;
+}
+.info-page .row table.loginInfo {
+  width: 577px;
+}
+.info-page .row table.districtInfo {
+  width: 292px;
+}
+.info-page .row table.basicInfo {
+  width: 396px;
+}
+.info-page .row table.politics {
+  width: 475px;
+}
+.info-page .row table.certificate {
+  width: 876px;
+}
+.info-page .row table.work-info {
+  width: 876px;
+}
