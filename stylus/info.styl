@@ -1,6 +1,44 @@
 @import 'var'
 .info-page
-  font-size: 13px
+  nav
+    .inner
+      a
+        color: #fff
+      i
+        display: inline-block
+        vertical-align: -4px
+        width: 16px
+        height: 21px
+        background: url('../img/apply.png') no-repeat
+      ul
+        &.primary-menu
+          display: flex
+          position: relative
+          width: 200px
+        &:hover > ul
+          opacity: 1
+        & > ul
+          display: flex
+          flex-direction: column
+          position: absolute
+          top: 100%
+          left: 0
+          right: 0
+          opacity: 0
+          background-color: #fff
+          box-shadow: 1px 1px 1px 1px lightgray
+          transition: all ease 0.3s
+          a
+            box-sizing: border-box
+            color: #000
+            display: inline-block
+            padding: 0 12px 
+            width: 100%
+            &:hover
+              background-color: lightgray
+          & > li
+            display: inline-block
+            background-color: #fff
   .main-content
     display: block
     width: 876px

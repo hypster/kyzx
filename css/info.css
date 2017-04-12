@@ -1,5 +1,46 @@
-.info-page {
-  font-size: 13px;
+.info-page nav .inner a {
+  color: #fff;
+}
+.info-page nav .inner i {
+  display: inline-block;
+  vertical-align: -4px;
+  width: 16px;
+  height: 21px;
+  background: url("../img/apply.png") no-repeat;
+}
+.info-page nav .inner ul.primary-menu {
+  display: flex;
+  position: relative;
+  width: 200px;
+}
+.info-page nav .inner ul:hover > ul {
+  opacity: 1;
+}
+.info-page nav .inner ul > ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px #edf1f7;
+  transition: all ease 0.3s;
+}
+.info-page nav .inner ul > ul a {
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  padding: 0 12px;
+  width: 100%;
+}
+.info-page nav .inner ul > ul a:hover {
+  background-color: #edf1f7;
+}
+.info-page nav .inner ul > ul > li {
+  display: inline-block;
+  background-color: #fff;
 }
 .info-page .main-content {
   display: block;
