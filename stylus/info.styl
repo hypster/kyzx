@@ -2,6 +2,7 @@
 .info-page
   nav
     .inner
+      display: flex
       a
         color: #fff
       i
@@ -12,15 +13,21 @@
         background: url('../img/apply.png') no-repeat
       ul
         &.primary-menu
-          display: flex
+          float: left
           position: relative
-          width: 200px
+          margin-right: 40px
         &:hover > ul
           opacity: 1
+          height: auto
+          & > li
+            height: auto
         & > ul
           display: flex
+          float: left
+          width: 200px
           flex-direction: column
           position: absolute
+          height: 0
           top: 100%
           left: 0
           right: 0
@@ -38,6 +45,9 @@
               background-color: lightgray
           & > li
             display: inline-block
+            float: left
+            height: 0
+            overflow: hidden
             background-color: #fff
   .main-content
     display: block

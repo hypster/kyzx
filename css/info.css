@@ -1,3 +1,6 @@
+.info-page nav .inner {
+  display: flex;
+}
 .info-page nav .inner a {
   color: #fff;
 }
@@ -9,17 +12,24 @@
   background: url("../img/apply.png") no-repeat;
 }
 .info-page nav .inner ul.primary-menu {
-  display: flex;
+  float: left;
   position: relative;
-  width: 200px;
+  margin-right: 40px;
 }
 .info-page nav .inner ul:hover > ul {
   opacity: 1;
+  height: auto;
+}
+.info-page nav .inner ul:hover > ul > li {
+  height: auto;
 }
 .info-page nav .inner ul > ul {
   display: flex;
+  float: left;
+  width: 200px;
   flex-direction: column;
   position: absolute;
+  height: 0;
   top: 100%;
   left: 0;
   right: 0;
@@ -40,6 +50,9 @@
 }
 .info-page nav .inner ul > ul > li {
   display: inline-block;
+  float: left;
+  height: 0;
+  overflow: hidden;
   background-color: #fff;
 }
 .info-page .main-content {
